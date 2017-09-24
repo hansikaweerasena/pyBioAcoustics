@@ -618,13 +618,13 @@ def featuresToCSV(pathToSegments,species,testOrTrain):
     
     
 def makeHeadersMinMax(pathToCSV):
-    minMaxHeaders = ["min","max"]
+    minMaxHeaders = ["max_ZCR","min_ZCR","max_short_term_energy","min_short_term_energy","max_short_term_energy_entropy","min_short_term_energy_entropy", "max_spectral_centroid","min_spectral_centroid","max_spectral_spread","min_spectral_spread","max_spectral_entropy", "min_spectral_entropy", "max_spectral_flux", "min_spectral_flux", "max_spectral_roll_off", "min_spectral_roll_off", "max_MFCC_1", "min_MFCC_1","max_MFCC_2", "min_MFCC_2", "max_MFCC_3", "min_MFCC_3", "max_MFCC_4", "min_MFCC_4", "max_MFCC_5", "min_MFCC_5", "max_MFCC_6", "min_MFCC_6", "max_MFCC_7", "min_MFCC_7", "max_MFCC_8", "min_MFCC_8", "max_MFCC_9", "min_MFCC_9", "max_MFCC_10", "min_MFCC_10", "max_MFCC_11", "min_MFCC_11", "max_MFCC_12", "min_MFCC_12", "max_MFCC_13", "min_MFCC_13", "max_Chroma_1","min_Chroma_1", "max_Chroma_2","min_Chroma_2", "max_Chroma_3", "min_Chroma_3", "max_Chroma_4", "min_Chroma_4", "max_Chroma_5", "min_Chroma_5", "max_Chroma_6", "min_Chroma_6", "max_Chroma_7", "min_Chroma_7", "max_Chroma_8", "min_Chroma_8", "max_Chroma_9", "min_Chroma_9", "max_Chroma_10", "min_Chroma_10", "max_Chroma_11", "min_Chroma_11", "max_Chroma_12", "min_Chroma_12", "max_Chroma_Deviation", "min_Chroma_Deviation","label"]
     with open(pathToCSV, 'wb') as outcsv:
         writer = csv.writer(outcsv)
         writer.writerow(minMaxHeaders)
 
 def makeHeadersMSD(pathToCSV):
-    meanSDHeaders = ["Date", "temperature 1", "Temperature 2"]
+    meanSDHeaders = ["mean_ZCR","SD_ZCR","mean_short_term_energy","SD_short_term_energy","mean_short_term_energy_entropy","SD_short_term_energy_entropy", "mean_spectral_centroid","SD_spectral_centroid","mean_spectral_spread","SD_spectral_spread","mean_spectral_entropy", "SD_spectral_entropy", "mean_spectral_flux", "SD_spectral_flux", "mean_spectral_roll_off", "SD_spectral_roll_off", "mean_MFCC_1", "SD_MFCC_1","mean_MFCC_2", "SD_MFCC_2", "mean_MFCC_3", "SD_MFCC_3", "mean_MFCC_4", "SD_MFCC_4", "mean_MFCC_5", "SD_MFCC_5", "mean_MFCC_6", "SD_MFCC_6", "mean_MFCC_7", "SD_MFCC_7", "mean_MFCC_8", "SD_MFCC_8", "mean_MFCC_9", "SD_MFCC_9", "mean_MFCC_10", "SD_MFCC_10", "mean_MFCC_11", "SD_MFCC_11", "mean_MFCC_12", "SD_MFCC_12", "mean_MFCC_13", "SD_MFCC_13", "mean_Chroma_1","SD_Chroma_1", "mean_Chroma_2","SD_Chroma_2", "mean_Chroma_3", "SD_Chroma_3", "mean_Chroma_4", "SD_Chroma_4", "mean_Chroma_5", "SD_Chroma_5", "mean_Chroma_6", "SD_Chroma_6", "mean_Chroma_7", "SD_Chroma_7", "mean_Chroma_8", "SD_Chroma_8", "mean_Chroma_9", "SD_Chroma_9", "mean_Chroma_10", "SD_Chroma_10", "mean_Chroma_11", "SD_Chroma_11", "mean_Chroma_12", "SD_Chroma_12", "mean_Chroma_Deviation", "SD_Chroma_Deviation","label"]
     with open(pathToCSV, 'wb') as outcsv:
         writer = csv.writer(outcsv)
         writer.writerow(meanSDHeaders)
