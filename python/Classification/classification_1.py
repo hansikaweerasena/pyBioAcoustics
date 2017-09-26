@@ -27,7 +27,8 @@ def makeTestCSV():
     return pd.concat([CSaTest, ECTest,CSnTest,EOTest,BWSTest])
 
 
-train_dataframe = makeTrainCSV()
+train_dataframe = pd.read_csv("G:\FYP Project\GIT project\Features\\train\TrainMeanSDFeatures.csv")
+#train_dataframe = makeTrainCSV()
 train_labels = train_dataframe.label
 labels = list(set(train_labels))
 train_labels = np.array([labels.index(x) for x in train_labels])
@@ -37,8 +38,8 @@ train_features = train_dataframe.iloc[:,:-1]
 classifier = svm.SVC()
 classifier.fit(train_features, train_labels)
 
-
-test_dataframe = makeTestCSV()
+test_dataframe = pd.read_csv("G:\FYP Project\GIT project\Features\\test\TestMeanSDFeatures.csv")
+#test_dataframe = makeTestCSV()
 
 test_labels = test_dataframe.label
 #labels = list(set(test_labels))
