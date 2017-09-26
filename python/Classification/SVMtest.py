@@ -4,6 +4,7 @@ Created on Fri Sep 01 23:44:37 2017
 
 @author: Hansika
 """
+import pandas as pd
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -27,3 +28,5 @@ clf.fit(X,y)
 print(clf.predict([0.58,0.76]))
 
 print(clf.predict([10.58,10.76]))
+
+digits = pd.read_csv("http://archive.ics.uci.edu/ml/machine-learning-databases/optdigits/optdigits.tra", header=None)
