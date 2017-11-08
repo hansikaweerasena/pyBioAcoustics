@@ -599,12 +599,12 @@ def writeSingleFileToCSV(filePath,pathToCSVMinMax,pathToCSVMSD,species):
     
 
 def featuresToCSV(pathToSegments,species,testOrTrain):
-    if(testOrTrain=='Test' or testOrTrain == 'test' ):
+    if(testOrTrain=='Test' or testOrTrain == 'test'):
         testOrTrain = 'Test'
     else:
         testOrTrain = 'Train'
-    pathToCSVMinMax = pathToSegments+'\\' + species + testOrTrain+'MinMaxFeatures.csv'
-    pathToCSVMSD = pathToSegments+'\\' + species + testOrTrain+'MeanSDFeatures.csv'
+    pathToCSVMinMax = pathToSegments+'\\' + species + testOrTrain+'TWMinMaxFeatures.csv'
+    pathToCSVMSD = pathToSegments+'\\' + species + testOrTrain+'TWMeanSDFeatures.csv'
     makeHeadersMinMax(pathToCSVMinMax)
     makeHeadersMSD(pathToCSVMSD)
     for root, dirs, files in os.walk(pathToSegments):
@@ -628,3 +628,8 @@ def makeHeadersMSD(pathToCSV):
     with open(pathToCSV, 'wb') as outcsv:
         writer = csv.writer(outcsv)
         writer.writerow(meanSDHeaders)
+        
+def getFeatureForSegment(signal,fs):
+    stFeatures = getStFeatures(signal,fs)
+    meanSDFeatures = getMeanAndSDofFeatures(stFeatures)
+    return meanSDFeatures 

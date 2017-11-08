@@ -1,0 +1,169 @@
+One Window Method
+
+-------------------------------------------------------------------------
+kernal is:  linear
+mean Cross Validated Score is :  0.909212197611
+for  CSa
+model accuracy (%):  98.3050847458 %
+Num correct 58 Total 59
+0.983050847458
+for  EC
+model accuracy (%):  94.0298507463 %
+Num correct 63 Total 67
+0.940298507463
+for  CSn
+model accuracy (%):  35.0 %
+Num correct 21 Total 60
+0.35
+for  EO
+model accuracy (%):  90.0 %
+Num correct 45 Total 50
+0.9
+for  BWS
+model accuracy (%):  94.4444444444 %
+Num correct 153 Total 162
+0.944444444444
+for  All
+model accuracy (%):  85.4271356784 %
+Num correct 340 Total 398
+0.854271356784
+-------------------------------------------------------------------------
+kernal is:  poly
+mean Cross Validated Score is :  0.946942163149
+for  CSa
+model accuracy (%):  98.3050847458 %
+Num correct 58 Total 59
+0.983050847458
+for  EC
+model accuracy (%):  100.0 %
+Num correct 67 Total 67
+1.0
+for  CSn
+model accuracy (%):  60.0 %
+Num correct 36 Total 60
+0.6
+for  EO
+model accuracy (%):  90.0 %
+Num correct 45 Total 50
+0.9
+for  BWS
+model accuracy (%):  94.4444444444 %
+Num correct 153 Total 162
+0.944444444444
+for  All
+model accuracy (%):  90.2010050251 %
+Num correct 359 Total 398
+0.902010050251
+-------------------------------------------------------------------------
+kernal is:  rbf
+mean Cross Validated Score is :  0.844420379797
+for  CSa
+model accuracy (%):  96.6101694915 %
+Num correct 57 Total 59
+0.966101694915
+for  EC
+model accuracy (%):  94.0298507463 %
+Num correct 63 Total 67
+0.940298507463
+for  CSn
+model accuracy (%):  5.0 %
+Num correct 3 Total 60
+0.05
+for  EO
+model accuracy (%):  90.0 %
+Num correct 45 Total 50
+0.9
+for  BWS
+model accuracy (%):  97.5308641975 %
+Num correct 158 Total 162
+0.975308641975
+for  All
+model accuracy (%):  81.9095477387 %
+Num correct 326 Total 398
+0.819095477387
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+Two window method
+
+-------------------------------------------------------------------------
+kernal is:  linear
+mean Cross Validated Score is :  0.899066368855
+for  CSa
+model accuracy (%):  100.0 %
+Num correct 46 Total 46
+1.0
+for  EC
+model accuracy (%):  100.0 %
+Num correct 51 Total 51
+1.0
+for  CSn
+model accuracy (%):  58.9285714286 %
+Num correct 33 Total 56
+0.589285714286
+for  EO
+model accuracy (%):  88.0 %
+Num correct 44 Total 50
+0.88
+for  BWS
+model accuracy (%):  90.0584795322 %
+Num correct 154 Total 171
+0.900584795322
+for  All
+model accuracy (%):  87.7005347594 %
+Num correct 328 Total 374
+0.877005347594
+-------------------------------------------------------------------------
+kernal is:  poly
+mean Cross Validated Score is :  0.924792007466
+for  CSa
+model accuracy (%):  100.0 %
+Num correct 46 Total 46
+1.0
+for  EC
+model accuracy (%):  100.0 %
+Num correct 51 Total 51
+1.0
+for  CSn
+model accuracy (%):  87.5 %
+Num correct 49 Total 56
+0.875
+for  EO
+model accuracy (%):  88.0 %
+Num correct 44 Total 50
+0.88
+for  BWS
+model accuracy (%):  94.1520467836 %
+Num correct 161 Total 171
+0.941520467836
+for  All
+model accuracy (%):  93.8502673797 %
+Num correct 351 Total 374
+0.938502673797
+-------------------------------------------------------------------------
+kernal is:  rbf
+mean Cross Validated Score is :  0.837427779986
+for  CSa
+model accuracy (%):  100.0 %
+Num correct 46 Total 46
+1.0
+for  EC
+model accuracy (%):  100.0 %
+Num correct 51 Total 51
+1.0
+for  CSn
+model accuracy (%):  30.3571428571 %
+Num correct 17 Total 56
+0.303571428571
+for  EO
+model accuracy (%):  86.0 %
+Num correct 43 Total 50
+0.86
+for  BWS
+model accuracy (%):  90.0584795322 %
+Num correct 154 Total 171
+0.900584795322
+for  All
+model accuracy (%):  83.1550802139 %
+Num correct 311 Total 374
+0.831550802139
