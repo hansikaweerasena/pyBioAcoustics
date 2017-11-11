@@ -74,7 +74,7 @@ EOTest =  pd.read_csv("G:\FYP Project\GIT project\Features\\Two Window\\test\EOT
 BWSTest = pd.read_csv("G:\FYP Project\GIT project\Features\\Two Window\\test\BWTestTWMeanSDFeatures.csv")
 
 result_df = pd.DataFrame(columns=['Cross_val','CSa','EC','CSn','EO','BWS','All','Description'])
-for i in range(10,70,5):
+for i in range(1,69):
     pca = getPCA(train_features,i)
     pca.fit(train_features)
     pca_train_features = pca.transform(train_features)
@@ -95,5 +95,5 @@ for i in range(10,70,5):
         temp.append(str(i) + kernel)
         result_df.loc[len(result_df)] = temp
 
-result_df.to_csv('pca_2window_results.csv')
+result_df.to_csv('pca_2window_results_extended.csv')
 

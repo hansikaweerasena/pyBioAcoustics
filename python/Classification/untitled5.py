@@ -11,8 +11,8 @@ import numpy as np
 import collections
 from sklearn.ensemble import IsolationForest
 
-Fs, y = readSegment('G:\FYP Project\Final Evaluation\\NEW\\0\\human_seg.wav')
-test_seg = getFeatureForSegment(y,Fs)
+#Fs, y = readSegment('G:\FYP Project\Final Evaluation\\NEW\\0\\human_seg.wav')
+#test_seg = getFeatureForSegment(y,Fs)
 def makeTrainCSV():
     CSaTrain = pd.read_csv("G:\FYP Project\GIT project\Features\One Window\\train\CSaTrainMeanSDFeatures.csv")
     ECTrain =  pd.read_csv("G:\FYP Project\GIT project\Features\One Window\\train\ECTrainMeanSDFeatures.csv")
@@ -36,8 +36,8 @@ test_new_dataframe = test_new_dataframe.reset_index(drop=True)
 train_dataframe = makeTrainCSV()
 train_features = train_dataframe.iloc[:,:-1]
 #clf = svm.OneClassSVM(nu=0.05, kernel="rbf", degree=3,gamma = 0.9)
-#clf = IsolationForest(max_samples=100)
-clf = svm.OneClassSVM(nu=0.05, kernel="rbf", degree=3,gamma = 0.6)
+clf = IsolationForest(max_samples=100)
+#clf = svm.OneClassSVM(nu=0.05, kernel="rbf",gamma = 0.6)
 clf.fit(train_features)
 test_features = test_new_dataframe.iloc[:,:-1]
 test_features = np.array(test_features)
